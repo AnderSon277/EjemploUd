@@ -1,0 +1,16 @@
+1) Data first
+ Scaffold-DbContext 'Data Source=DESKTOP-8N9QUA0; Initial Catalog=quejas; User Id=ronny; Password=naty' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+2) Controladores y vistas
+3) Migracion mis tablas
+
+Add-Migration migracionAnder -Context quejasContext-->> crear migracion
+Update-Database -Context quejasContext---->> ejecutar migracion
+
+4) Migracion tablas del sistema
+Add-Migration migracionAnderSistema -Context ApplicationDbContext
+Update-Database -Context ApplicationDbContext
+
+5) Inicio de sesion
+6) Slider
+
